@@ -3,6 +3,8 @@ import routes from './routes';
 
 const app = express();
 
+app.use(express.json());
+
 app.get('/barber', (request, response) => {
   const { name } = request.query;
 
